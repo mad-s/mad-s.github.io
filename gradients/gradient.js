@@ -27,7 +27,7 @@ var Ditherer = /** @class */ (function () {
     };
     return Ditherer;
 }());
-var colors = ["A", "B", "C", "D"];
+var colors = ["A", "B", "C", "D", "E", "F", "G"];
 var GradientEditor = /** @class */ (function () {
     function GradientEditor() {
         var _this = this;
