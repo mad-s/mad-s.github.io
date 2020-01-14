@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Verlaufs-Editor</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="M. Signer">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="gradient.css">
+
+  </head>
+  <body>
+    <ul id="gradient-stops">
+    </ul>
+
+
+    <form id="next-gradient-stop" class="form-row">
+      <div class="form-row">
+        <input type="number" min="1" step="1" required class="input-index" placeholder="Faden #">
+        <div class="input-colors"></div>
+        <input type="button" class="input-submit" value="+">
+      </div>
+    </form>
+
+    <input type="button" id="generate" value="Verlauf generieren">
+    <br>
+
+    <textarea id="output" rows="10"></textarea>
+    <br>
+
+    <input type="button" id="copy" value="Kopieren">
+    <input type="button" id="save" value="Speichern">
+
+    <template id="template-gradient-stop">
+      <li>
+        <span class="content"></span><input type="button" class="delete" value="&times;">
+      </li>
+    </template>
+
+    <template id="template-edit-color-value">
+      <div class="input-group input-color">
+        <input type="number" min="0" max="100" step="1" placeholder="0" class="form-control">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            %<span class="color-name"></span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script src="gradient.js"></script>
+  </body>
+</html>
+<!-- vim: set ts=2 sw=2 et: -->
