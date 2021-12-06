@@ -851,7 +851,7 @@ async function init(input) {
         var ret = makeMutClosure(arg0, arg1, 15, __wbg_adapter_23);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper746 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper753 = function(arg0, arg1, arg2) {
         var ret = makeMutClosure(arg0, arg1, 115, __wbg_adapter_26);
         return addHeapObject(ret);
     };
